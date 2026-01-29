@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home — My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="fade-in">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Marjorie's <span class="accent">Site</span></h1>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Background selector: change how the photo background looks (no JS) -->
+  <section class="controls-wrap">
+    <div class="controls">
+      <input type="radio" name="bg" id="bg-purple" checked>
+      <label for="bg-purple" class="swatch" title="Purple">Purple</label>
+
+      <input type="radio" name="bg" id="bg-magenta">
+      <label for="bg-magenta" class="swatch" title="Magenta">Magenta</label>
+
+      <input type="radio" name="bg" id="bg-black">
+      <label for="bg-black" class="swatch" title="Black">Black</label>
+    </div>
+
+    <main class="hero">
+      <div class="photo-wrap hover-raise">
+        <div class="photo" aria-hidden="false">
+          <!-- Replace the src with your own image in assets/ (e.g. assets/me.jpg) -->
+          <img src="https://via.placeholder.com/320x320.png?text=Profile" alt="Your photo">
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1 class="title">Hi, I'm <span class="name">Your Name</span></h1>
+        <p class="lead">A short tagline about what you do — designer, developer, maker.</p>
+        <a class="cta" href="about.html">About Me</a>
+      </div>
+
+      <p class="note">Tip: Click a color to change the background behind the photo (CSS-only).</p>
+    </main>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2026 My Portfolio — Built with CSS</small>
+    </div>
+  </footer>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="slide-in-left">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Marjorie's <span class="accent">Site</span></h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container about">
+    <aside class="profile-card hover-raise">
+      <img src="https://via.placeholder.com/240.png?text=Profile" alt="Profile picture">
+      <h2>Your Name</h2>
+      <p class="role muted">Designer · Developer · Creator</p>
+      <p class="muted">Location • Open to work • contact@example.com</p>
+    </aside>
+
+    <section class="bio">
+      <h2>About Me</h2>
+      <p class="muted">Short bio: I build thoughtful UI and delightful interactions using modern CSS. I enjoy clean design, accessibility, and learning new techniques.</p>
+      <p>Example: I design interfaces and build small, useful tools — focusing on accessibility and performance.</p>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>Responsive layouts & CSS Grid</li>
+        <li>CSS animations & transitions</li>
+        <li>Static site design — no JavaScript</li>
+      </ul>
+
+      <p class="muted">Tip: Replace the placeholder image at <code>assets/</code> with your own (JPEG/PNG) and update the text to personalize this page.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2026 My Portfolio</small>
+    </div>
+  </footer>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects — My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="fade-in-up">
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Marjorie's <span class="accent">Site</span></h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container projects">
+    <h1>Projects</h1>
+    <p class="muted">Each project can include an embedded YouTube video or a Google Drive preview. Replace the placeholders below with your own IDs.</p>
+
+    <section class="grid">
+      <article class="card hover-raise">
+        <h3>Video Demo</h3>
+        <div class="embed embed-16-9">
+          <!-- Replace VIDEO_ID with your YouTube video ID -->
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen title="YouTube video"></iframe>
+        </div>
+        <p class="muted">Replace <code>VIDEO_ID</code> with the YouTube ID (e.g. dQw4w9WgXcQ).</p>
+      </article>
+
+      <article class="card hover-raise">
+        <h3>Drive Preview</h3>
+        <div class="embed embed-16-9">
+          <!-- For Google Drive PDFs or slides: use /preview link format: https://drive.google.com/file/d/FILE_ID/preview -->
+          <iframe src="https://drive.google.com/file/d/FILE_ID/preview" frameborder="0" allowfullscreen title="Drive preview"></iframe>
+        </div>
+        <p class="muted">Replace <code>FILE_ID</code> with the Drive file ID and ensure the file is set to "Anyone with the link can view".</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Tip: For YouTube, use the embed URL: <code>https://www.youtube.com/embed/VIDEO_ID</code></small>
+    </div>
+  </footer>
+</body>
+</html>
+/* Variables and reset */
+:root{
+  --bg:#000000; /* deep black */
+  --card:#0b0b0f; /* card surface */
+  --accent:#7c3aed; /* purple */
+  --accent-2:#d63384; /* magenta */
+  --muted:#9aa4b2;
+  --photo-size:200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:#eae8eb;background:linear-gradient(180deg,var(--bg) 0%, #070707 100%)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem}
+.nav .logo{font-weight:700;color:var(--accent);text-decoration:none}
+.nav a{color:#f0e9ff;text-decoration:none;opacity:.95;margin-left:1rem}
+.container{max-width:980px;margin:2.5rem auto;padding:0 1rem}
+.site-header{border-bottom:1px solid rgba(255,255,255,.03)}
+.site-footer{padding:2rem;color:rgba(255,255,255,.6)}
+
+/* Hero / photo */
+.controls-wrap{display:flex;flex-direction:column;align-items:center;gap:1.25rem;padding:2rem}
+.controls{display:flex;gap:.5rem;align-items:center}
+.controls input{display:none}
+.controls .swatch{display:inline-block;width:36px;height:36px;border-radius:10px;border:2px solid rgba(255,255,255,.04);cursor:pointer;box-shadow:0 6px 14px rgba(2,6,23,.6);transition:transform .18s,box-shadow .18s}
+.controls .swatch[title="Purple"]{background:linear-gradient(135deg,var(--accent),#9f7aea)}
+.controls .swatch[title="Magenta"]{background:linear-gradient(135deg,var(--accent-2),#ff66b2)}
+.controls .swatch[title="Black"]{background:repeating-linear-gradient(45deg,#0a0a0a 0 8px,#070707 8px 16px)}
+.controls .swatch:active{transform:scale(.96)}
+
+.hero{display:flex;flex-direction:column;align-items:center;gap:.75rem;text-align:center;padding:1.4rem}
+.photo-wrap{width:var(--photo-size);height:var(--photo-size);border-radius:18px;padding:14px;display:grid;place-items:center;transition:transform .36s cubic-bezier(.2,.9,.2,1)}
+.photo{width:100%;height:100%;border-radius:12px;overflow:hidden;display:grid;place-items:center;background:#0b0b0d;transition:background .45s ease,transform .35s ease,box-shadow .35s}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.title{color:#efe8ff;font-size:1.6rem}
+.lead{color:var(--muted)}
+
+/* background switch by radio (no JS): place radios before the .hero and use general sibling */
+#bg-purple:checked ~ .hero .photo{background:linear-gradient(135deg,var(--accent),#b794f4);box-shadow:0 12px 40px rgba(124,58,237,.18)}
+#bg-magenta:checked ~ .hero .photo{background:radial-gradient(120px 80px at 20% 20%, rgba(214,51,132,.18), transparent),linear-gradient(135deg,var(--accent-2),#ff66b2);box-shadow:0 18px 60px rgba(214,51,132,.14)}
+#bg-black:checked ~ .hero .photo{background:repeating-linear-gradient(45deg,#070707 0 8px,#0a0a0a 8px 16px);box-shadow:inset 0 0 30px rgba(0,0,0,.35)}
+
+/* About */
+.about{display:grid;grid-template-columns:260px 1fr;gap:2rem;align-items:start}
+.profile-card{background:rgba(255,255,255,.03);padding:1.25rem;border-radius:12px;text-align:center}
+.profile-card img{width:130px;height:130px;border-radius:50%;object-fit:cover;margin:0 auto 0.75rem;display:block}
+.role{color:var(--muted)}
+
+/* Projects grid */
+.projects .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:1rem}
+.card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));padding:1rem;border-radius:12px;transition:transform .24s,box-shadow .24s;border:1px solid rgba(255,255,255,.03)}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(12,8,20,.5)}
+.embed{position:relative;width:100%;overflow:hidden;border-radius:8px;background:linear-gradient(180deg,#060606,#0a0a0a)}
+.embed-16-9{padding-top:56.25%}
+.embed iframe{position:absolute;left:0;top:0;width:100%;height:100%;border:0}
+.muted{color:var(--muted)}
+
+/* UI elements */
+.nav a.active{box-shadow:inset 0 -3px 0 var(--accent)}
+.logo .accent{color:var(--accent)}
+.cta{display:inline-block;margin-top:.6rem;padding:.6rem 1rem;border-radius:8px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;text-decoration:none;box-shadow:0 8px 30px rgba(124,58,237,.12);transition:transform .18s;}
+.cta:hover{transform:translateY(-3px)}
+.note{color:var(--muted);font-size:.9rem;margin-top:.75rem}
+.hero-text{max-width:440px}
+
+/* small micro-interactions */
+.hover-grow:hover{transform:scale(1.02);transition:transform .24s}
+.hover-raise{transition:transform .24s,box-shadow .24s}
+.hover-raise:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(2,6,23,.55)}
+.nav a:hover, .nav .logo:hover{opacity:1}
+.photo-wrap:hover{transform:translateY(-6px)}
+
+/* Animations */
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.fade-in{animation:fadeIn .6s ease both}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:none}}
+.slide-in-left{animation:slideInLeft .6s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.fade-in-up{animation:fadeUp .5s ease both}
+
+/* Responsive */
+@media (max-width:720px){
+  .about{grid-template-columns:1fr;}
+  :root{--photo-size:160px}
+}
